@@ -10,8 +10,16 @@ import _ from 'lodash';
 export default {
   data() {
     return {
-      name: _.capitalize('world'),
+      name: _.capitalize('test'),
     };
+  },
+  created() {
+    this.name = 'World';
+  },
+  methods: {
+    setName(name) {
+      this.name = name;
+    },
   },
 };
 </script>
