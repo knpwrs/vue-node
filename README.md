@@ -104,6 +104,7 @@ personally like saving browsers for end-to-end testing with things like
 
 **MIT**
 
-[AVA]: https://github.com/avajs/ava "AVA: Futuristic Test Runner"
 [`browser-env`]: https://github.com/lukechilds/browser-env[`Nightwatch.js`]: http://nightwatchjs.org/ "Nightwatch.js | Node.js powered End-to-End testing framework"
+[`Nightwatch.js`]: http://nightwatchjs.org/ "Node.js powered End-to-End testing framework"
 [`p-immediate`]: https://github.com/sindresorhus/p-immediate "Returns a promise resolved in the next event loop"
+[AVA]: https://github.com/avajs/ava "AVA: Futuristic Test Runner"
