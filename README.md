@@ -15,9 +15,9 @@ testing without having to spin up web browsers!
 Here is an example of using `vue-node` with [AVA]. The process should be similar
 for whatever node testing framework you want to use.
 
-First, make sure you have `vue-node` and `browser-env` installed as development
-dependencies. If you are running an environment with `vue-loader` and
-`webpack@2` then you will already have all required peer dependencies:
+First, make sure you have `vue-node` and [`browser-env`] installed as
+development dependencies. If you are running an environment with `vue-loader`
+and `webpack@2` then you will already have all required peer dependencies:
 
 ```sh
 npm i -D vue-node browser-env
@@ -105,4 +105,4 @@ personally like saving browsers for end-to-end testing with things like
 **MIT**
 
 [AVA]: https://github.com/avajs/ava "AVA: Futuristic Test Runner"
-[`Nightwatch.js`]: http://nightwatchjs.org/ "Nightwatch.js | Node.js powered End-to-End testing framework"
+[`browser-env`]: https://github.com/lukechilds/browser-env[`Nightwatch.js`]: http://nightwatchjs.org/ "Nightwatch.js | Node.js powered End-to-End testing framework"
