@@ -5,12 +5,12 @@
 </template>
 
 <script>
-import _ from 'lodash';
+import capitalize from './helpers/capitalize';
 
 export default {
   data() {
     return {
-      name: _.capitalize('test'),
+      name: capitalize('test'),
     };
   },
   created() {
