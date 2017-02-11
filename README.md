@@ -93,7 +93,7 @@ I am personally more familiar with webpack than browserify, so for the time
 being this will only work in combination with webpack. I will gladly accept a
 pull request to implement browserify functionality.
 
-## What about testing in web browsers?
+### What about testing in web browsers?
 
 Unit testing in web browsers is a very heavy process with many tradeoffs.
 Configuration and tooling is tricky as is getting browsers to run in CI. I
