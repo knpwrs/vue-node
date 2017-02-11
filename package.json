@@ -4,7 +4,15 @@
   "description": "Load vue components in node.",
   "main": "./lib/hook.js",
   "scripts": {
-    "test": "node test/index.test"
+    "lint": "eslint test/helpers/setup.js",
+    "test": "ava",
+    "test:watch": "ava --watch",
+    "posttest": "npm run lint"
+  },
+  "ava": {
+    "require": [
+      "./test/helpers/setup.js"
+    ]
   },
   "engines": {
     "node": ">=6.0.0"
@@ -23,6 +31,8 @@
     "webpack": "^2.2.1"
   },
   "devDependencies": {
+    "ava": "^0.18.1",
+    "browser-env": "^2.0.20",
     "css-loader": "^0.26.1",
     "eslint": "^3.15.0",
     "eslint-config-airbnb-base": "^11.1.0",

@@ -1,8 +1,7 @@
-const { join } = require('path');
-const hook = require('../lib/hook');
+import _ from 'lodash';
+import test from 'ava';
+import TestComponent from './test.vue';
 
-hook(join(__dirname, 'webpack.config.test.js'));
-
-const Test = require('./test.vue');
-
-console.log(Test._scopeId); // eslint-disable-line
+test('it works!', (t) => {
+  t.true(_.isString(TestComponent._scopeId)); // eslint-disable-line no-underscore-dangle
+});
