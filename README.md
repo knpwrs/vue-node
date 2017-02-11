@@ -80,10 +80,10 @@ See the `test` directory in this project for more examples!
 Node allows developers to hook `require` to load files that aren't JavaScript or
 JSON. Unfortunately, require hooks have to be synchronous. Using `vue-loader` on
 the other hand, is inherently asynchronous. `vue-node` works by synchronously
-running webpack in a separate process and collecting to output to pass to node's
-module compilation system. The compilation is done completely in memory without
-writing to the filesystem. It also modifies your webpack configuration to
-automatically build for node and commonjs with all dependencies of your
+running webpack in a separate process and collecting the output to pass to
+node's module compilation system. The compilation is done completely in memory
+without writing to the filesystem. It also modifies your webpack configuration
+to automatically build for node and commonjs with all dependencies of your
 component externalized. This means that the built component modules are as small
 as possible with dependency resolution left up to node.
 
