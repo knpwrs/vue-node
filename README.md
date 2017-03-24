@@ -51,7 +51,8 @@ Now you can configure AVA to require this file in all test processes. In
 ```
 
 Now you can `require` / `import` `.vue` files and test like you would in a
-browser! If you need to test DOM updates, you can use `Vue.nextTick` along with `async` / `await`.
+browser! If you need to test DOM updates, you can use `Vue.nextTick` along
+with `async` / `await`.
 
 ```js
 import Vue from 'vue';
