@@ -51,13 +51,12 @@ Now you can configure AVA to require this file in all test processes. In
 ```
 
 Now you can `require` / `import` `.vue` files and test like you would in a
-browser! If you need to test DOM updates, I recommend using the [`p-immediate`]
-package from npm along with `async` / `await`.
+browser! If you need to test DOM updates, you can use `Vue.nextTick` along
+with `async` / `await`.
 
 ```js
 import Vue from 'vue';
 import test from 'ava';
-import nextTick from 'p-immediate';
 import TestComponent from './test.vue';
 
 test('renders the correct message', async (t) => {
@@ -66,7 +65,7 @@ test('renders the correct message', async (t) => {
   t.is(vm.$el.querySelector('h1').textContent, 'Hello, World!');
   // Update
   vm.setName('Foo');
-  await nextTick();
+  await Vue.nextTick();
   t.is(vm.$el.querySelector('h1').textContent, 'Hello, Foo!');
 });
 ```
