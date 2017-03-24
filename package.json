@@ -17,8 +17,13 @@
   "engines": {
     "node": ">=6.0.0"
   },
+  "repository": "knpwrs/vue-node",
   "author": "Copyright (c) 2017 Kenneth Powers <ken@kenpowers.net> (http://knpw.rs)",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/knpwrs/vue-node/issues"
+  },
+  "homepage": "https://github.com/knpwrs/vue-node#readme",
   "dependencies": {
     "execa": "^0.6.0",
     "lodash": "^4.17.4",
