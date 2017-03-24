@@ -2,7 +2,6 @@
 import _ from 'lodash';
 import Vue from 'vue';
 import test from 'ava';
-import nextTick from 'p-immediate';
 import TestComponent from './test.vue';
 
 test('has a created hook', (t) => {
@@ -20,10 +19,10 @@ test('renders the correct message', async (t) => {
   t.is(vm.$el.querySelector('h1').textContent, 'Hello, World!');
   // Update
   vm.setName('Foo');
-  await nextTick();
+  await Vue.nextTick();
   t.is(vm.$el.querySelector('h1').textContent, 'Hello, Foo!');
   // Update directly 👻
   vm._data.name = 'Bar';
-  await nextTick();
+  await Vue.nextTick();
   t.is(vm.$el.querySelector('h1').textContent, 'Hello, Bar!');
 });
