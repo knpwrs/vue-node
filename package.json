@@ -5,7 +5,7 @@
   "main": "./lib/hook.js",
   "scripts": {
     "lint": "eslint test/helpers/setup.js",
-    "test": "ava",
+    "test": "NODE_PATH=test ava",
     "test:watch": "ava --watch",
     "posttest": "npm run lint"
   },

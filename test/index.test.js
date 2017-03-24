@@ -4,6 +4,11 @@ import Vue from 'vue';
 import test from 'ava';
 import nextTick from 'p-immediate';
 import TestComponent from './test.vue';
+import TestComponentFromNodePath from 'test.vue';
+
+test('has loaded NODE_PATH', (t) => {
+  t.true(_.isFunction(TestComponentFromNodePath.created));
+});
 
 test('has a created hook', (t) => {
   t.true(_.isFunction(TestComponent.created));
