@@ -4,7 +4,7 @@
   "description": "A require hook for loading single-file vue components in node.",
   "main": "./lib/hook.js",
   "scripts": {
-    "lint": "eslint test/helpers/setup.js",
+    "lint": "eslint lib test",
     "test": "NODE_PATH=test ava",
     "test:watch": "ava --watch",
     "posttest": "npm run lint"

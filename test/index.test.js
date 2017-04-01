@@ -2,8 +2,8 @@
 import _ from 'lodash';
 import Vue from 'vue';
 import test from 'ava';
+import TestComponentFromNodePath from 'test.vue'; // eslint-disable-line
 import TestComponent from './test.vue';
-import TestComponentFromNodePath from 'test.vue';
 
 test('has loaded NODE_PATH', (t) => {
   t.true(_.isFunction(TestComponentFromNodePath.created));
