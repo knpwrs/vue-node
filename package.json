@@ -1,6 +1,6 @@
 {
   "name": "vue-node",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A require hook for loading single-file vue components in node.",
   "main": "./lib/hook.js",
   "scripts": {
