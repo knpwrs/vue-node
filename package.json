@@ -32,7 +32,7 @@
     "yargs": "^7.0.2"
   },
   "peerDependencies": {
-    "vue-loader": "^10.3.0",
+    "vue-loader": "*",
     "webpack": "^2.2.1"
   },
   "devDependencies": {
@@ -44,8 +44,8 @@
     "eslint-plugin-html": "^2.0.0",
     "eslint-plugin-import": "^2.2.0",
     "vue": "^2.1.10",
-    "vue-loader": "^11.3.4",
-    "vue-template-compiler": "^2.1.10",
+    "vue-loader": "*",
+    "vue-template-compiler": "*",
     "webpack": "^2.2.1"
   }
 }
