@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "ava": "^0.19.0",
-    "browser-env": "^2.0.20",
+    "browser-env": "^2.0.31",
     "css-loader": "^0.28.0",
     "eslint": "^3.15.0",
     "eslint-config-airbnb-base": "^11.1.0",
