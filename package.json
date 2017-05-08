@@ -28,7 +28,7 @@
     "execa": "^0.6.0",
     "lodash": "^4.17.4",
     "memory-fs": "^0.4.1",
-    "webpack-node-externals": "^1.5.4",
+    "webpack-node-externals": "^1.6.0",
     "yargs": "^7.0.2"
   },
   "peerDependencies": {
