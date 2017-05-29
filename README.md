@@ -10,6 +10,18 @@
 A require hook for loading single-file vue components in node. Useful for
 testing without having to spin up web browsers!
 
+## Impending Deprecation Notice
+
+[The Vue team is going to be creating official testing tools][vue-test-utils]
+based on [`avoriaz`] which already has complete examples of how to test Vue
+components in node-based testing frameworks without spinning up web browsers. My
+suggestion is for users of this library to migrate to [`avoriaz`] and then to
+the official testing tools once those are available. Once the official testing
+tools are available, I will mark this package as deprecated on npm.
+
+Usage of this library will also require changes to your `vue-loader`
+configuration starting with version `^12.0.0`. See [issue #9] for more details.
+
 ## Usage Example
 
 Here is an example of using `vue-node` with [AVA]. The process should be similar
@@ -103,7 +115,10 @@ personally like saving browsers for end-to-end testing with things like
 
 **MIT**
 
+[`avoriaz`]: https://github.com/eddyerburgh/avoriaz "avoriaz"
 [`browser-env`]: https://github.com/lukechilds/browser-env "Fake browser environment for node."
 [`Nightwatch.js`]: http://nightwatchjs.org/ "Node.js powered End-to-End testing framework"
 [`p-immediate`]: https://github.com/sindresorhus/p-immediate "Returns a promise resolved in the next event loop"
 [AVA]: https://github.com/avajs/ava "AVA: Futuristic Test Runner"
+[issue #9]: https://github.com/knpwrs/vue-node/issues/9 "issue #9"
+[vue-test-utils]: https://github.com/vuejs/vue-test-utils/issues/1 "vue-test-utils"
