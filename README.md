@@ -1,5 +1,7 @@
 # vue-node
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/knpwrs/vue-node.svg)](https://greenkeeper.io/)
+
 [![Dependency Status](https://img.shields.io/david/knpwrs/vue-node.svg)](https://david-dm.org/knpwrs/vue-node)
 [![devDependency Status](https://img.shields.io/david/dev/knpwrs/vue-node.svg)](https://david-dm.org/knpwrs/vue-node#info=devDependencies)
 [![Build Status](https://img.shields.io/travis/knpwrs/vue-node.svg)](https://travis-ci.org/knpwrs/vue-node)
